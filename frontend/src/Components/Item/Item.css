@@ -1,6 +1,12 @@
 .item{
-    width: 350px;
+    width: 400px;
+    display: flex;
+    flex-wrap: wrap;
 
+}
+.item img{
+    width: 350px;
+    height: auto;
 }
 
 .item p{

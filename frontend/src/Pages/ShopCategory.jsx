@@ -7,12 +7,9 @@ import Item from '../Components/Item/Item'
 const ShopCategory = (props) => {
   const { all_products } = useContext(ShopContext);
 
-  if (!all_products) {
-    return <div>Loading...</div>; // Or any other loading indicator
-  }
   return (
     <div className='shop-category'>
-      <img src={props.banner} alt="" />
+      <img className='shop-category-banner' src={props.banner} alt="" />
       <div className="shop-category-indexSort">
         <p>
           <span>Showing 1-12</span> out of 36 products
@@ -34,7 +31,10 @@ const ShopCategory = (props) => {
           }
         })}
       </div>
-
+      <div className='shop-category-loadmore'>
+        Explore more
+      </div>
+      
 
 
 
