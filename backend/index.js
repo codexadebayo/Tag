@@ -16,6 +16,7 @@ mongoose.connect(
   "mongodb+srv://codexadebayo:TIgnUpscvByzJ5uh@cluster0.8sltzyb.mongodb.net/"
 );
 
+
 //API Creation
 app.get("/", (req, res) => {
   res.send("Hello World");
